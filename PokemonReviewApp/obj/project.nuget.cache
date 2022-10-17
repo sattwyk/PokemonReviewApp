@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "vijoJ1DOTdHvpkOqaQzl5U5W0tC5b7bPQZr3y7YZohPhBjwYhiOUnH2YsocJdVF5O2WzQwnnlJsFVPh4mOH3Fg==",
+  "dgSpecHash": "z1kraZ/SXlxLmu2AXQeHm5biOTvcF8g+P7qWXIfofE4gFz10mDNYei66MNXyvUCSEhdE/qeRkjy8EZz715LIXw==",
   "success": true,
   "projectFilePath": "C:\\Users\\amada\\OneDrive\\Documents\\GitHub\\PokemonReviewApp\\PokemonReviewApp\\PokemonReviewApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\amada\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\amada\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\amada\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\amada\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\amada\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
