@@ -59,4 +59,4 @@ C:\Users\amada\OneDrive\Documents\GitHub\PokemonReviewApp\PokemonReviewApp\obj\D
 C:\Users\amada\OneDrive\Documents\GitHub\PokemonReviewApp\PokemonReviewApp\obj\Debug\net6.0\ref\PokemonReviewApp.dll
 C:\Users\amada\OneDrive\Documents\GitHub\PokemonReviewApp\PokemonReviewApp\obj\Debug\net6.0\PokemonReviewApp.pdb
 C:\Users\amada\OneDrive\Documents\GitHub\PokemonReviewApp\PokemonReviewApp\obj\Debug\net6.0\PokemonReviewApp.genruntimeconfig.cache
-C:\Users\amada\OneDrive\Documents\GitHub\PokemonReviewApp\PokemonReviewApp\bin\Debug\net6.0\ref\PokemonReviewApp.dll
+C:\Users\amada\OneDrive\Documents\GitHub\PokemonReviewApp\PokemonReviewApp\obj\Debug\net6.0\refint\PokemonReviewApp.dll
