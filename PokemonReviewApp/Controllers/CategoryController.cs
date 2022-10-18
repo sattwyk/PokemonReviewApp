@@ -6,7 +6,7 @@ using PokemonReviewApp.Models;
 
 namespace PokemonReviewApp.Controllers
 {
-
+    //make interface -> repository -> controller -> Dto -> MappingProfiles
     [Route("api/[controller]")]
     [ApiController]
     public class CategoryController : Controller
