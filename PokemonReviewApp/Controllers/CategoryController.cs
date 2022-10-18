@@ -34,37 +34,35 @@ namespace PokemonReviewApp.Controllers
         }
 
 
-        [HttpGet("{pokeId}")]
-        [ProducesResponseType(200, Type = typeof(Pokemon))]
-        public IActionResult GetPokemon(int pokeId)
+        [HttpGet("{categoryId}")]
+        [ProducesResponseType(200, Type = typeof(Category))]
+        [ProducesResponseType(400)]
+        public IActionResult GetCategory(int categoryId)
         {
-            if (!_pokemonRepository.PokemonExists(pokeId))
+            if (!_categoryRepository.CategoryExists(categoryId))
                 return NotFound();
 
-            var pokemon = _mapper.Map<PokemonDto>(_pokemonRepository.GetPokemon(pokeId));
+            var category = _mapper.Map<CategoryDto>(_categoryRepository.GetCategory(categoryId));
 
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            return Ok(pokemon);
+            return Ok(category);
         }
 
-        [HttpGet("{pokeId}/rating")]
-        [ProducesResponseType(200, Type = typeof(decimal))]
+        [HttpGet("pokemon/{categoryId}")]
+        [ProducesResponseType(200, Type = typeof(IEnumerable<Pokemon>))]
         [ProducesResponseType(400)]
 
-        public IActionResult GetPokemonRating(int pokeId)
+        public IActionResult GetPokemonByCategoryId(int categoryId)
         {
-            if (!_pokemonRepository.PokemonExists(pokeId))
-                return NotFound();
+            var pokemons = _mapper.Map<List<PokemonDto>>(
+                _categoryRepository.GetPokemonByCategory(categoryId));
 
-            var rating = _pokemonRepository.GetPokemonRating(pokeId);
-
-            if (!ModelState.IsValid)
+            if(!ModelState.IsValid) 
                 return BadRequest();
 
-            return Ok(rating);
-
+            return Ok(pokemons);
         }
     }
 }
