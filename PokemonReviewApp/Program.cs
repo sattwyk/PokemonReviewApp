@@ -13,8 +13,8 @@ builder.Services.AddControllers();
 //seed the data
 builder.Services.AddTransient<Seed>();
 //to counter object cyclical error b/c many to many relationship can cause to get stuck in a loop 
-builder.Services.AddControllers().AddJsonOptions(x => 
-                 x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
+builder.Services.AddControllers().AddJsonOptions(x =>
+                x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 //wire up automapper
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 //add dependency injection 
@@ -42,7 +42,7 @@ if (args.Length == 1 && args[0].ToLower() == "seeddata")
 void SeedData(IHost app)
 {
     var scopedFactory = app.Services.GetService<IServiceScopeFactory>();
-    
+
     using (var scope = scopedFactory.CreateScope())
     {
         var service = scope.ServiceProvider.GetService<Seed>();
