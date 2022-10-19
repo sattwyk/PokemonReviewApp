@@ -11,7 +11,6 @@ namespace PokemonReviewApp.Repository
         public OwnerRepository(DataContext context)
         {
             _context = context;
-            _mapper = mapper;
         }
         public Owner GetOwner(int ownerId)
         {
